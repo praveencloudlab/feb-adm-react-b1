@@ -1,0 +1,72 @@
+React JS
+===============
+=> HTML5/CSS
+=> JS -> ES6
+===============
+TOC
+
+	-> component based design
+	-> components of react js
+	-> props and state
+	=============================
+	 data biding
+		-> property binding
+		-> event binding
+		-> two way binding
+	=============================
+	component communications
+		-> one way
+		-> two way
+    =============================
+    filters
+    forms
+    	-> reactive forms
+    	-> form validations
+    =============================
+    routers
+    =============================
+    http server code
+    =============================
+    redux
+    ============================
+
+
+    ===============================================
+    node js / express js / loopback js api server
+    any java based api servers like spring boot
+    ===============================================
+
+
+    Software
+    ===========
+    1.node.js
+    2.vscode editor
+    3.mysql database
+    4.postman 
+    5.chrome browser
+
+
+  
+   java script
+   modules in js
+   		-> es6 modules
+   webpack
+   live servers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

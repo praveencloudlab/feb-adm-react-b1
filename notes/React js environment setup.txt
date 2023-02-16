@@ -1,0 +1,5 @@
+React js environment setup
+===============================
+1.use create react app tool to create react application
+2. use npx from node to create/pull new react app structure from react lib
+	npx create-rect-app my-app
