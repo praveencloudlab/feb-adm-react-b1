@@ -1,0 +1,15 @@
+React JS Hooks
+=================
+useState - This hook allows you to add state to functional components. It takes an initial value as a parameter and returns an array with the current state value and a function to update it.
+
+useEffect - This hook lets you run side effects in your component, such as fetching data or setting up event listeners. It takes a function as a parameter, which will be called after each render cycle.
+
+useContext - This hook allows you to access data from a React context. It takes a context object as a parameter and returns the current context value.
+
+useReducer - This hook allows you to manage state using a reducer function. It takes a reducer function and an initial state as parameters, and returns the current state value and a dispatch function to update it.
+
+useCallback - This hook memoizes a function so that it will only be redefined if its dependencies change. It takes a function and an array of dependencies as parameters, and returns a memoized function.
+
+useMemo - This hook memoizes a value so that it will only be recalculated if its dependencies change. It takes a function and an array of dependencies as parameters, and returns a memoized value.
+
+useRef - This hook creates a mutable reference that persists across renders. It takes an initial value as a parameter, and returns a ref object with a current property that can be updated.
