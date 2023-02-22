@@ -25,6 +25,18 @@ const ProductForm = () => {
             {errors.price?.type==='max' && <span className='text-danger'>Price should be maxium 100000000</span>}
             </span>
             </div>
+
+            <div>
+                <input 
+                    {...register("email",{ required: true,pattern:  /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ })}
+                    type="text" 
+                    placeholder="Email" 
+                    name="email"/>
+                    <span>
+                    {errors.email?.type==='required' && <span className='text-danger'>Email is required</span>} 
+                    {errors.email?.type==='pattern' && <span className='text-danger'>Invalid Email</span>} 
+                    </span>
+            </div>
             <input type="submit" />
             </form>
 
