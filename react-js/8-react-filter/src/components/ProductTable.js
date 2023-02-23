@@ -23,7 +23,7 @@ const ProductTable = (props) => {
     const sortedProducts=products.sort((a,b)=>{
         if(sortBy==="name"){
             return sortOrder==="asc" ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name);
-        }else if(sortBy=="price"){
+        }else if(sortBy==="price"){
             return sortOrder==="asc" ? a.price-b.price:b.price-a.price;
         }
         return 0;
@@ -46,10 +46,7 @@ const ProductTable = (props) => {
         })
     }
 
-   
-    
-
-    return (
+  return (
         <div>
           
         <input type="text" placeholder="Search Products" onChange={handleChange}/>
