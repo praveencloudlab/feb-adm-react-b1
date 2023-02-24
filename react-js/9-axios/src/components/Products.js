@@ -6,9 +6,11 @@ import Product from './Product';
 
 const Products = () => {
 
+    let BASE_URL='http://localhost:8080';
+
     const[products,setProducts] = useState([]);
     useEffect(()=>{
-        axios.get('http://localhost:8080/api/products')
+        axios.get(BASE_URL+'/products')
         .then(response =>setProducts(response.data))
         .catch(error=>console.error(error))
     },[])

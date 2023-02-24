@@ -1,14 +1,41 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import axios from 'axios';
 import {useForm} from 'react-hook-form';
-const ProductForm = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm();
+const ProductForm = (props) => {
+    let BASE_URL='http://localhost:8080';
+    let{productId}=props;
+    const { register, handleSubmit,setValue,reset, formState: { errors } } = useForm();
+    const[product,setProduct]=useState({});
+
+    let productUpdate=(product)=>{
+
+    }
     const onSubmit = (data) => {
+        
+        if(productId){
+            axios.put(BASE_URL+`/products/${productId}`,data)
+            .then(response => setProduct(response.data))
+        }else{
         // if all validations are   successful, then save to server
-        axios.post('http://localhost:8080/api/products',data)
+        axios.post(BASE_URL+'/products',data)
         .then(response=>console.log(response))
+        reset({name:'',price:'',description:''})
+        }
        // console.log(data);
     }
+
+    useEffect(()=>{
+        if(productId){
+        axios.get(BASE_URL+`/products/${productId}`)
+        .then(response=>{
+            const{name,price,description}=response.data;
+            setValue('name',name);
+            setValue('price',price);
+            setValue('description',description);
+        })
+        
+        }
+    },[productId,setValue])
   
     return (
         <div>
@@ -46,7 +73,7 @@ const ProductForm = () => {
                     
                 </div>
                 <div>
-                    <button>Save</button>
+                    <button>{productId?'Update':'Save'}</button>
                 </div>
             </form>
             

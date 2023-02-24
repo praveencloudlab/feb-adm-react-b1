@@ -4,11 +4,12 @@ import axios from 'axios';
 import {useForm} from 'react-hook-form';
 import Product from './Product';
 const ProductSearchForm = () => {
+    let BASE_URL='http://localhost:8080';
     const { register, handleSubmit, formState: { errors } } = useForm();
     const [products,setProducts]=useState([])
     const[showData,setShowData] =useState(false);
     const onSubmit = (data) => {
-        axios.get(`http://localhost:8080/api/products/filter/${data.name}`)
+        axios.get(BASE_URL+`/products?name_like=${data.name}`)
         .then(response=>setProducts(response.data))
         .catch(error=>console.log(error));
         setShowData(true);
@@ -16,8 +17,6 @@ const ProductSearchForm = () => {
 
 
     let renderProducts=() => {
-        console.log(">>>> helloooo");
-        console.log(showData);
         console.log(products);
         return products.map((product,idx)=>{
             console.log(product);

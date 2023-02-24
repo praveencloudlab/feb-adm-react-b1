@@ -1,0 +1,214 @@
+{
+  "products": [
+    {
+      "name": "A",
+      "price": "76000",
+      "description": "AAA",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Speakers",
+      "price": 100000,
+      "description": "Apple Speaker"
+    },
+    {
+      "id": 36,
+      "name": "Remote",
+      "price": 87,
+      "description": "Sony Remote - new"
+    },
+    {
+      "name": "Remore Sports Car",
+      "price": "1111",
+      "description": "Remore Car",
+      "id": 37
+    },
+    {
+      "id": 38,
+      "name": "Book",
+      "price": 545,
+      "description": "React JS  Book"
+    },
+    {
+      "id": 39,
+      "name": "Tab",
+      "price": 89000,
+      "description": "Ipad Air 256 GB,Silver color"
+    },
+    {
+      "id": 40,
+      "name": "Pen",
+      "price": 45.87,
+      "description": "Red Ink"
+    },
+    {
+      "id": 41,
+      "name": "IPAD",
+      "price": 85000,
+      "description": "M2 IPAD"
+    },
+    {
+      "id": 43,
+      "name": "Jeep",
+      "price": 1500,
+      "description": "Toy"
+    },
+    {
+      "id": 44,
+      "name": "Monitor",
+      "price": 45000,
+      "description": "Dell Wireless"
+    },
+    {
+      "id": 45,
+      "name": "Monitor",
+      "price": 45000,
+      "description": "Dell Wireless"
+    },
+    {
+      "id": 46,
+      "name": "Monitor",
+      "price": 45000,
+      "description": "Dell Wireless"
+    },
+    {
+      "id": 47,
+      "name": "Bottle",
+      "price": 450,
+      "description": "Cofee Mug"
+    },
+    {
+      "id": 49,
+      "name": "Cable",
+      "price": 3500,
+      "description": "USB 2m cable"
+    },
+    {
+      "id": 51,
+      "name": "Biryani Rice",
+      "price": 8500,
+      "description": "Rice Bag 10 KG"
+    },
+    {
+      "id": 52,
+      "name": "Biryani Rice",
+      "price": 8500,
+      "description": "Rice Bag 10 KG"
+    },
+    {
+      "id": 102,
+      "name": "Biryani Rice",
+      "price": 8500,
+      "description": "Rice Bag 10 KG"
+    },
+    {
+      "id": 152,
+      "name": "Biryani Rice",
+      "price": 8500,
+      "description": "Rice Bag 10 KG"
+    },
+    {
+      "id": 202,
+      "name": "Biryani Rice",
+      "price": 8500,
+      "description": "Rice Bag 10 KG"
+    },
+    {
+      "id": 252,
+      "name": "Biryani Rice",
+      "price": 8500,
+      "description": "Rice Bag 10 KG"
+    },
+    {
+      "id": 452,
+      "name": "T-Shirt",
+      "price": 19.99,
+      "description": "A classic cotton T-shirt"
+    },
+    {
+      "id": 453,
+      "name": "Sneakers",
+      "price": 89.99,
+      "description": "Comfortable running shoes"
+    },
+    {
+      "id": 454,
+      "name": "Jeans",
+      "price": 59.99,
+      "description": "Slim-fit denim jeans"
+    },
+    {
+      "id": 455,
+      "name": "Backpack",
+      "price": 49.99,
+      "description": "A sturdy backpack for daily use"
+    },
+    {
+      "id": 456,
+      "name": "Smartphone",
+      "price": 799.99,
+      "description": "The latest model"
+    },
+    {
+      "id": 457,
+      "name": "Laptop",
+      "price": 1299.99,
+      "description": "A powerful laptop for professional use"
+    },
+    {
+      "id": 458,
+      "name": "Headphones",
+      "price": 129.99,
+      "description": "Noise-cancelling wireless headphones"
+    },
+    {
+      "id": 459,
+      "name": "Smartwatch",
+      "price": 299.99,
+      "description": "A high-end smartwatch"
+    },
+    {
+      "id": 460,
+      "name": "Camera",
+      "price": 599.99,
+      "description": "A mirrorless camera with interchangeable lenses"
+    },
+    {
+      "id": 461,
+      "name": "Gaming Console",
+      "price": 399.99,
+      "description": "A popular gaming console"
+    },
+    {
+      "id": 502,
+      "name": "PS5",
+      "price": 75000,
+      "description": "Play Station5"
+    },
+    {
+      "name": "Xboz",
+      "price": "85000",
+      "description": "Gaming console",
+      "id": 503
+    },
+    {
+      "name": "Xboz",
+      "price": "85000",
+      "description": "Gaming console",
+      "id": 504
+    },
+    {
+      "name": "Abc",
+      "price": "988",
+      "description": "Xyz",
+      "id": 505
+    },
+    {
+      "name": "Dummy Prod",
+      "price": "8888",
+      "description": "D1",
+      "id": 506
+    }
+  ]
+}
