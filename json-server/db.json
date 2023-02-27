@@ -1,9 +1,9 @@
 {
   "products": [
     {
-      "name": "A",
-      "price": "76000",
-      "description": "AAA",
+      "name": "iPad 11th Gen",
+      "price": "145000",
+      "description": "512 GB",
       "id": 1
     },
     {
@@ -11,18 +11,6 @@
       "name": "Speakers",
       "price": 100000,
       "description": "Apple Speaker"
-    },
-    {
-      "id": 36,
-      "name": "Remote",
-      "price": 87,
-      "description": "Sony Remote - new"
-    },
-    {
-      "name": "Remore Sports Car",
-      "price": "1111",
-      "description": "Remore Car",
-      "id": 37
     },
     {
       "id": 38,
@@ -209,6 +197,30 @@
       "price": "8888",
       "description": "D1",
       "id": 506
+    },
+    {
+      "name": "Apple Iphone 11",
+      "price": 45000,
+      "description": "Blue Color 256GB",
+      "id": 507
+    },
+    {
+      "name": "iphone13",
+      "price": "46000",
+      "description": "128GB",
+      "id": 508
+    },
+    {
+      "name": "iphone13 Pro",
+      "price": "120000",
+      "description": "512 GB",
+      "id": 509
+    },
+    {
+      "name": "Remore Sports Car",
+      "price": "1111",
+      "description": "Remore Car",
+      "id": 510
     }
   ]
 }

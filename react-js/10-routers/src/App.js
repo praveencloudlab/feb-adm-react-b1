@@ -9,9 +9,6 @@ import ProductDetail from './components/ProductDetail';
 import EditProduct from './components/EditProduct';
 
 
-
-
-
 const App = () => {
   return (
     
@@ -25,22 +22,19 @@ const App = () => {
         <div className='col-3'>
       <Link to="/">Home</Link> <br/>
       <Link to="products">View Products</Link> <br/>
-      <Link to="productdetails">Product Details</Link> <br/>
       <Link to="addproduct">Add Product</Link> <br/>
-      <Link to="editproduct">Edit Product</Link> <br/>
-      <Link to="deleteproduct">Delete Product</Link> <br/>
 
 
         </div>
 
         <div className='col-9'>
-
         <Routes>
         <Route path="/" element={ <Home/> } />
         <Route path="products" element={ <ProductList/> } />
-        <Route path="productdetails" element={ <ProductDetail/> } />
         <Route path="addproduct" element={ <ProductForm/> } />
+        <Route path="addproduct/:id" element={ <ProductForm/> } />
         <Route path="editproduct" element={ <EditProduct/> } />
+        <Route path="editproduct/:id" element={ <EditProduct/> } />
         <Route path="*" element={ <PageNotFound/> } />
 
 
