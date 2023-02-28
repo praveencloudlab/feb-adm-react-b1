@@ -2,30 +2,26 @@ import React, { useState,useEffect } from 'react';
 import{useForm} from 'react-hook-form'
 import { useNavigate } from 'react-router-dom';
 import ProductService from '../api-services/ProductService';
-import ProductDetail from './ProductDetail';
 import { useParams } from 'react-router-dom';
 
 const ProductForm = (props) => {
   const{id}=useParams();
   console.log("ID: "+id);
-
     const{register,handleSubmit,reset,formState:{errors}}=useForm();
     const[product,setProduct]=useState({});
     const navigate=useNavigate();
-
-    if(!id){
-      //  reset({name:'',price:'',description:''})
-
-    }
-
+   
   useEffect(()=>{
     if(id){
         ProductService.findProduct(id)
-        .then(response=>setProduct(response.data))
+        .then(response=>{
+            setProduct(response.data)
+            reset(response.data)
+        })
     }else{
         console.log(">>> new ");
     }
-  },[])
+  },[reset])
 
     const onSubmit = (product) =>{
         if(id){
@@ -74,8 +70,6 @@ const ProductForm = (props) => {
                 <button>{id?'Update':'Save'}</button>
             </div>
             </form>
-
-
         </div>
     );
 };

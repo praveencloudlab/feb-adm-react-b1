@@ -22,7 +22,7 @@ const ProductDetail = (props) => {
             <td>{product.name}</td>
             <td>{product.price}</td>
             <td>{product.description}</td>
-            <td><Link to={`/addproduct/${product.id}`}>Edit</Link></td>
+            <td><Link to={`/addproduct/${product.id}`}><button>Edit</button></Link></td>
             <td><button onClick={()=>deleteProduct(product.id)}>Delete</button></td>
     </tr>
     );

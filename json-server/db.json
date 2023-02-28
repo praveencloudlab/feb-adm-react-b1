@@ -73,10 +73,10 @@
       "description": "USB 2m cable"
     },
     {
-      "id": 51,
       "name": "Biryani Rice",
-      "price": 8500,
-      "description": "Rice Bag 10 KG"
+      "price": "8500",
+      "description": "Rice Bag 100 KG",
+      "id": 51
     },
     {
       "id": 52,
