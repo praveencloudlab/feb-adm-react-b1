@@ -11,6 +11,7 @@ import rootReducer from './reducers/rootReducers';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const store = configureStore({
   reducer: rootReducer
+  //: middle ware mapping
 });
 
 root.render(
