@@ -6,6 +6,8 @@ const initialState = {
     switch (action.type) {
       case 'ADD_TO_CART': {
         const newItem = action.payload;
+        console.log(action);
+        console.log(newItem.payload)
         const existingItem = state.items.find(item => item.id === newItem.id);
         if (existingItem) {
           return {

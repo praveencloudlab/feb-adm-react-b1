@@ -1,9 +1,13 @@
 const initialState = [];
 const productsReducer = (state = [], action) => {
+  //let{type,payload}=action;
+ // console.log(payload);
+
   switch (action.type) {
     case 'ADD_PRODUCT':
-      const { name, price } = action.payload;
-      return [...state, {['id']:state.length+1,name,price}];
+    const { name, price,description } = action.payload; // payload contains product object which comes from a form submit though action
+     return [...state, {['id']:state.length+1,name,price,description}];
+     //return[...state,action.payload]
     case 'REMOVE_PRODUCT':
       return state.filter(product => product.id !== action.payload);
       case 'UPDATE_PRODUCT':
