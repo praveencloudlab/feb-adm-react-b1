@@ -33,11 +33,11 @@ const Cart = () => {
             </div>
             <hr/>
 
-
+        <div className='row'>
+            <div className='col-8'>
             <table className='table'>
                 <thead>
                     <tr>
-
                         <th>Product Name</th>
                         <th>Quantity</th>
                         <th>Unit Price</th>
@@ -45,19 +45,36 @@ const Cart = () => {
 
                     </tr>
                 </thead>
-
-
                 <tbody>
                     {renderCartItems()}
-                </tbody>
-
-                <tr>
+                    <tr>
                     <td></td>
                     <th></th>
-                    <td>Total Cart</td>
-                    <td> <b>&#8377;{cartTotal}</b></td>
+                    <td><br/>Total Cart</td>
+                    <td><br/> <b>&#8377;{cartTotal}</b></td>
                 </tr>
+                </tbody>
+
+               
             </table>
+            </div>
+            <div className='col-4'>
+                <div className='card bg-info'>
+                    
+                    <div className='card-body'>
+                        <h6>Sub total ({cartItems.length}) items</h6>
+                        <h3>&#8377;{cartTotal.toLocaleString(undefined, {maximumFractionDigits:2})}</h3>
+                        <hr/>
+                        <button>Make Payment</button>
+                        
+                    </div>
+                </div>
+               
+            </div>
+
+        </div>
+
+            
             <hr />
 
 
